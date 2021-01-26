@@ -8,4 +8,9 @@
   let go = document.getElementById("goButton");
   let goBulb = document.getElementById("goLight");
 
+// Event Listener For When Stop Button Is Clicked
+  stop.addEventListener("click", function() {
+    stopBulb.classList.toggle('stop')
+  })
+
 })();
