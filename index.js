@@ -28,21 +28,17 @@
 
 
   // Console Log Mouse Enter //
-  stop.addEventListener('mouseenter', function() {
-    logMouseEnter('stop');
-  });
+//   var goBulb = stopButton.addEventListener("mouseenter", function() {
+//     console.log("Entered stop button");
+// })
 
-  slow.addEventListener('mouseenter', function() {
-    logMouseEnter('slow');
-  });
+// var slowBulb = slowButton.addEventListener("mousenter", function() {
+//     console.log("Entered slow button");
+// })
 
-  go.addEventListener('mouseenter', function() {
-    logMouseEnter('go');
-  });
-
-  function logMouseEnter(light) {
-    console.log('Entered' + light + 'button');
-  }
+// var goBulb = goButton.addEventListener("mouseenter", function() {
+//     console.log("Entered go button");
+// })
 
   
 
