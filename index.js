@@ -43,9 +43,24 @@
   stopButton.addEventListener('mouseleave', buttonMouseLeave);
   slowButton.addEventListener('mouseleave', buttonMouseLeave);
   goButton.addEventListener('mouseleave', buttonMouseLeave);
+
+const controls = document.getElementById('controls');
+
+controls.addEventListener('click', (event) => {
+  if (event.target === controls) {
+    return;
+  }
+
+  let status;
+
+  if (event.target === stopButton) {
+    status = stopLight.classList.contains('stop') ? 'on' : 'off';
+  }
+})
+  
 })();
 
-let 
+
 
 
 
