@@ -53,16 +53,25 @@
 
     let status;
 
-    if (stopLight.classList.contains('stop')) {
-      status = 'on';
-    }
+    if (event.target === stopButton) {
+      
 
+      if (stopLight.classList.contains('stop')) {
+        status = 'on';
+      }
+      else {
+        status = 'off';
+      }
+    }
+    else if (event.target === slowButton) {
+      status = slowLight.classList.contains('slow') ? 'on' : 'off';
+    }
     else {
-      status = 'off';
+      status = goLight.classList.contains('go') ? 'on' : 'off';
     }
-  })
 
-
+    console.log(`${event.target.textContent} bulb ${status}`);
+  });
 })();
 
 
