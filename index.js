@@ -36,6 +36,7 @@
     console.log(`Left ${event.target.textContent} button`);
   };
 
+// Adding EventListener To Buttons //
   stopButton.addEventListener('mouseenter', buttonMouseEnter);
   slowButton.addEventListener('mouseenter', buttonMouseEnter);
   goButton.addEventListener('mouseenter', buttonMouseEnter);
@@ -44,6 +45,7 @@
   slowButton.addEventListener('mouseleave', buttonMouseLeave);
   goButton.addEventListener('mouseleave', buttonMouseLeave);
 
+// Retrieving Control ID For Bulbs //
   const controls = document.getElementById('controls');
 
   controls.addEventListener('click', (event) => {
@@ -69,7 +71,7 @@
     else {
       status = goLight.classList.contains('go') ? 'on' : 'off';
     }
-
+    // Console Logging Bulb Status //
     console.log(`${event.target.textContent} bulb ${status}`);
   });
 })();
