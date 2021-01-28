@@ -24,29 +24,30 @@
   go.addEventListener("click", function() {
     // Green Light //
     goBulb.classList.toggle('go')
-  })
-
-
-
-
-
+  });
 
 // - When a user's mouse enters a button, log `"Entered <textContent> button"` to the console.
+  const buttonMouseEnter = (event) => {
+    console.log(`Entered ${event.target.textContent} button`);
+  };
+
 // - When a user's mouse leaves a button, log `"Left <textContent> button"` to the console.
+  const buttonMouseLeave = (event) => {
+    console.log(`Left ${event.target.textContent} button`);
+  };
 
-  // Console Log Mouse Enter //
-  var stop = stopButton.addEventListener("mouseenter", function() {
-    console.log("Entered stop button");
-})
+  stopButton.addEventListener('mouseenter', buttonMouseEnter);
+  slowButton.addEventListener('mouseenter', buttonMouseEnter);
+  goButton.addEventListener('mouseenter', buttonMouseEnter);
 
-var slow = slowButton.addEventListener("mousenter", function() {
-    console.log("Entered slow button");
-})
-
-var go = goButton.addEventListener("mouseenter", function() {
-    console.log("Entered go button");
-})
-
-  
-
+  stopButton.addEventListener('mouseleave', buttonMouseLeave);
+  slowButton.addEventListener('mouseleave', buttonMouseLeave);
+  goButton.addEventListener('mouseleave', buttonMouseLeave);
 })();
+
+
+
+
+
+
+
