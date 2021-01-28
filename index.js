@@ -35,15 +35,15 @@
 // - When a user's mouse leaves a button, log `"Left <textContent> button"` to the console.
 
   // Console Log Mouse Enter //
-  var goBulb = stopButton.addEventListener("mouseenter", function() {
+  var stop = stopButton.addEventListener("mouseenter", function() {
     console.log("Entered stop button");
 })
 
-var slowBulb = slowButton.addEventListener("mousenter", function() {
+var slow = slowButton.addEventListener("mousenter", function() {
     console.log("Entered slow button");
 })
 
-var goBulb = goButton.addEventListener("mouseenter", function() {
+var go = goButton.addEventListener("mouseenter", function() {
     console.log("Entered go button");
 })
 
