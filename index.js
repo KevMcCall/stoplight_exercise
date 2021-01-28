@@ -65,6 +65,7 @@
         status = 'off';
       }
     }
+    // Conditional Ternary Operators For Bulb On/Off Status //
     else if (event.target === slowButton) {
       status = slowLight.classList.contains('slow') ? 'on' : 'off';
     }
